@@ -24,15 +24,14 @@ export default function About() {
 
             {/* IMAGE ONLY (NO BOX FEEL) */}
             <div className="relative w-[320px] h-[380px] md:w-[380px] md:h-[450px]">
-
-          <Image
-  src="/heello.png"
-  alt="Profile"
+<Image
+  src="/Heello.png"
+  alt="Muhammad Ahmed"
   fill
-  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 420px"
-  className="object-cover"
+  priority
+  sizes="(max-width: 768px) 320px, 380px"       
+  className="object-contain  "
 />
-
             </div>
 
           </div>

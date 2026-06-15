@@ -102,14 +102,14 @@ export default function Hero() {
 
             {/* IMAGE ONLY (NO CONTAINER BOX) */}
             <div className="relative w-[360px] h-[460px] md:w-[420px] md:h-[540px]">
-
-              <Image
-                src="/hello.png"
-                alt="Profile"
-                fill
-                className="object-cover"
-              />
-
+<Image
+  src="/hello.png"
+  alt="hello"
+  fill
+  priority                                         
+  sizes="(max-width: 768px) 360px, 420px"          
+  className="object-cover"
+/>
             </div>
 
           </div>
