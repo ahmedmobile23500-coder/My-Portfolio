@@ -75,7 +75,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
             <a
-              href="/resume.pdf"
+              href="/Resume.pdf"
               target="_blank"
               className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md transition"
             >
