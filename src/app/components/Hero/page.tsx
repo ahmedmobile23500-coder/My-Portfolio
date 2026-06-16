@@ -74,15 +74,14 @@ export default function Hero() {
           {/* BUTTONS */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 
-            <a
-href="/Resume.pdf"
-  target="_blank"
-  rel="noopener noreferrer"
+<a
+  href="/Resume.pdf"
   download
   className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md transition"
 >
   My Resume
-            </a>
+</a>
+     
 
             <a
               href="#contact"
