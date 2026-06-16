@@ -3,8 +3,6 @@ import { Resend } from "resend";
 
 export async function POST(req: Request) {
   try {
-    const resend = new Resend(process.env.RESEND_API_KEY);
-
     const body = await req.json();
     const { name, email, message } = body;
 
@@ -15,16 +13,22 @@ export async function POST(req: Request) {
       );
     }
 
-    if (!process.env.RESEND_API_KEY) {
+    // ✅ FIRST check env
+    const apiKey = process.env.RESEND_API_KEY;
+
+    if (!apiKey) {
       return NextResponse.json(
         { error: "Missing Resend API Key" },
         { status: 500 }
       );
     }
 
+    // ✅ THEN create instance
+    const resend = new Resend(apiKey);
+
     const result = await resend.emails.send({
       from: "Portfolio <onboarding@resend.dev>",
-      to: ["ahmedmobile23500@gmail.com"], // change this
+      to: ["ahmedmobile23500@gmail.com"],
       subject: `New message from ${name}`,
       replyTo: email,
       html: `
@@ -36,6 +40,7 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ success: true, result });
+
   } catch (error: any) {
     console.error("EMAIL ERROR:", error);
 
