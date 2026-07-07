@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Hero() {
   const fullName = "Muhammad Ahmed";
@@ -47,17 +48,17 @@ export default function Hero() {
       <div className="absolute w-[350px] h-[350px] bg-purple-500 opacity-20 blur-3xl rounded-full bottom-16 right-16"></div>
 
       <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between gap-12 z-10">
-
         {/* LEFT SIDE */}
         <div className="text-center md:text-left">
-
           <p className="text-blue-400 text-xl md:text-2xl mb-2 font-bold tracking-wide">
             Hello, I'm
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight
-          bg-gradient-to-r from-blue-400 via-white to-purple-400
-          bg-clip-text text-transparent">
+          <h1
+            className="text-4xl md:text-6xl font-extrabold leading-tight
+            bg-gradient-to-r from-blue-400 via-white to-purple-400
+            bg-clip-text text-transparent"
+          >
             {name}
             <span className="animate-pulse">|</span>
           </h1>
@@ -67,21 +68,19 @@ export default function Hero() {
           </h2>
 
           <p className="text-gray-300 mt-6 max-w-xl text-lg leading-relaxed">
-            I build modern, responsive, and high-performance web applications using
-            Next.js, React, and Tailwind CSS.
+            I build modern, responsive, and high-performance web applications
+            using Next.js, React, and Tailwind CSS.
           </p>
 
           {/* BUTTONS */}
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-
-<a
-  href="/resume.pdf"
-  download
-  className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md transition"
->
-  My Resume
-</a>
-     
+            <a
+              href="/resume.pdf"
+              download
+              className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg font-semibold shadow-md transition"
+            >
+              My Resume
+            </a>
 
             <a
               href="#contact"
@@ -89,34 +88,51 @@ export default function Hero() {
             >
               Contact Me
             </a>
+          </div>
 
+          {/* SOCIAL LINKS */}
+          <div className="mt-8 flex items-center justify-center md:justify-start gap-5">
+            <a
+              href="https://github.com/ahmedmobile23500-coder"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              className="p-3 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300 hover:scale-110"
+            >
+              <FaGithub className="text-2xl text-white" />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/muhammad-ahmed-aa659430a"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              className="p-3 rounded-full bg-blue-600 hover:bg-blue-700 transition-all duration-300 hover:scale-110"
+            >
+              <FaLinkedin className="text-2xl text-white" />
+            </a>
           </div>
         </div>
 
-        {/* RIGHT SIDE IMAGE (NO BOX) */}
+        {/* RIGHT SIDE IMAGE */}
         <div className="flex justify-center">
-
           <div className="relative">
-
-            {/* THEME GLOW ONLY */}
+            {/* THEME GLOW */}
             <div className="absolute -inset-10 bg-gradient-to-r from-blue-500/30 via-purple-500/30 to-blue-500/30 blur-3xl rounded-full"></div>
 
-            {/* IMAGE ONLY (NO CONTAINER BOX) */}
+            {/* IMAGE */}
             <div className="relative w-[360px] h-[460px] md:w-[420px] md:h-[540px]">
-<Image
-  src="/hello.png"
-  alt="hello"
-  fill
-  priority                                         
-  sizes="(max-width: 768px) 360px, 420px"          
-  className="object-cover"
-/>
+              <Image
+                src="/hello.png"
+                alt="Muhammad Ahmed"
+                fill
+                priority
+                sizes="(max-width: 768px) 360px, 420px"
+                className="object-cover"
+              />
             </div>
-
           </div>
-
         </div>
-
       </div>
     </section>
   );
