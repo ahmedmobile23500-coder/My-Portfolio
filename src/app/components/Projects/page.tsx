@@ -14,8 +14,8 @@ export default function Projects() {
         "Tailwind CSS",
         "Custom API",
       ],
-      github: "https://github.com/yourusername/ecommerce-app",
-      live: "https://your-ecommerce-demo.vercel.app",
+      github: "https://github.com/ahmedmobile23500-coder/E-Commerce",
+      live: "https://e-commerce-vdb1-rho.vercel.app/",
     },
   ];
 
