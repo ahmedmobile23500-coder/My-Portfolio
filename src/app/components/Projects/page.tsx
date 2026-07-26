@@ -2,22 +2,40 @@
 
 export default function Projects() {
   const projects = [
-    {
-      title: "E-Commerce App",
-      description:
-        "A full-stack E-Commerce application built with Next.js, MongoDB, and a custom REST API. Features include product management, user authentication, shopping cart functionality, and responsive design.",
-      technologies: [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "MongoDB",
-        "Tailwind CSS",
-        "Custom API",
-      ],
-      github: "https://github.com/ahmedmobile23500-coder/E-Commerce",
-      live: "https://e-commerce-vdb1-rho.vercel.app/",
-    },
-  ];
+  {
+    title: "E-Commerce App",
+    description:
+      "A full-stack E-Commerce application built with Next.js, MongoDB, and a custom REST API. Features include product management, user authentication, shopping cart functionality, and responsive design.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "MongoDB",
+      "Tailwind CSS",
+      "Custom API",
+    ],
+    github: "https://github.com/ahmedmobile23500-coder/E-Commerce",
+    live: "https://e-commerce-vdb1-rho.vercel.app/",
+  },
+
+  {
+    title: "Nova AI Chat",
+    description:
+      "Nova AI Chat is a modern AI-powered chatbot built with Next.js and the Groq API. It provides lightning-fast AI conversations, Markdown support, chat history, responsive design, and an intuitive user interface for seamless interaction with advanced language models.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "MongoDB",
+      "Groq API",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "JWT",
+    ],
+    github: "https://github.com/ahmedmobile23500-coder/AI_CHAT_APP",
+    live: "https://ai-chat-app-gules-iota.vercel.app/",
+  },
+];
 
   return (
     <section

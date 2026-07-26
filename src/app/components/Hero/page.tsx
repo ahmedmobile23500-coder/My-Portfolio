@@ -64,7 +64,7 @@ export default function Hero() {
           </h1>
 
           <h2 className="text-2xl md:text-4xl font-semibold text-gray-100 mt-4">
-            Full Stack Web Developer
+            AI Powered Full Stack Web Developer 
           </h2>
 
           <p className="text-gray-300 mt-6 max-w-xl text-lg leading-relaxed">
@@ -83,10 +83,10 @@ export default function Hero() {
             </a>
 
             <a
-              href="#contact"
+              href="#projects"
               className="border border-gray-500 hover:border-blue-400 hover:text-blue-400 px-6 py-3 rounded-lg font-semibold transition"
             >
-              Contact Me
+              My Projects
             </a>
           </div>
 
