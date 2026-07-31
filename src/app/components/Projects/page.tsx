@@ -35,6 +35,55 @@ export default function Projects() {
     github: "https://github.com/ahmedmobile23500-coder/AI_CHAT_APP",
     live: "https://ai-chat-app-gules-iota.vercel.app/",
   },
+
+  {
+    title: "WhatsApp Clone",
+    description:
+      "A real-time messaging application inspired by WhatsApp, built with Next.js and Firebase. Features include one-on-one and group chats, real-time message delivery, online/typing status, media sharing, and secure user authentication.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Firebase",
+      "Socket.io",
+      "Tailwind CSS",
+    ],
+    github: "https://github.com/ahmedmobile23500-coder/Whatapp-Clone",
+    live: "https://whatapp-clone-delta.vercel.app/",
+  },
+
+  {
+    title: "Anstagram (Instagram Clone)",
+    description:
+      "A full-featured Instagram clone built with Next.js and MongoDB. Includes photo/video posts, likes, comments, follow system, stories, and a responsive feed with infinite scroll for a seamless social media experience.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "MongoDB",
+      "Cloudinary",
+      "Tailwind CSS",
+      "JWT",
+    ],
+    github: "https://github.com/ahmedmobile23500-coder/anstagram",
+    live: "https://anstagram.vercel.app/",
+  },
+
+  {
+    title: "AI Text-to-Image Generator",
+    description:
+      "An AI-powered image generation app that turns text prompts into stunning visuals using state-of-the-art diffusion models. Features prompt history, downloadable results, and a clean, fast, responsive interface.",
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "OpenAI API",
+      "Stability AI",
+      "Tailwind CSS",
+    ],
+    github: "https://github.com/ahmedmobile23500-coder/AI-Image-Generator",
+    live: "https://ai-image-generator-ten-liard.vercel.app/",
+  },
 ];
 
   return (
